@@ -1,0 +1,40 @@
+#include "resource.h"
+
+IDR_NOTEPADMENU MENU
+BEGIN
+    POPUP "&File;"
+    BEGIN
+        MENUITEM "&Create;", ID_FILE_CREATE
+        MENUITEM "&New Window;", ID_FILE_NEW_WINDOW
+        MENUITEM "&Open...;", ID_FILE_OPEN
+        MENUITEM "&Save;", ID_FILE_SAVE
+        MENUITEM "Save &as...;", ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Page options;", ID_FILE_PAGE_OPTS
+        MENUITEM "P&rint(Legacy?);", ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit;", ID_FILE_EXIT
+    END
+
+    POPUP "&Edit;"
+    BEGIN
+        MENUITEM "&Create;", 0, GRAYED
+    END
+
+    POPUP "F&ormat;"
+    BEGIN
+        MENUITEM "&Create;", 0, GRAYED
+    END
+
+    POPUP "&View;"
+    BEGIN
+        MENUITEM "&Create;", 0, GRAYED
+    END
+
+    POPUP "&Help;"
+    BEGIN
+        MENUITEM "&Create;", 0, GRAYED
+    END
+END
+
+IDI_NOTEPADICON ICON "notepad.ico"

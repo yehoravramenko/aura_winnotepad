@@ -32,7 +32,7 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     wc.hIconSm = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_NOTEPADICON));
     wc.hCursor = LoadCursor(NULL, IDC_ARROW);
     wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
-    wc.lpszMenuName = NULL;
+    wc.lpszMenuName = MAKEINTRESOURCE(IDR_NOTEPADMENU);
     wc.lpszClassName = "MainClass";
     if (!RegisterClassEx(&wc))
     {
